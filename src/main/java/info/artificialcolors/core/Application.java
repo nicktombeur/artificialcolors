@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @SpringBootApplication
-public class ArtificialColorsApplication {
+public class Application {
 
     @RequestMapping("/test")
     @ResponseBody
@@ -17,7 +17,7 @@ public class ArtificialColorsApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ArtificialColorsApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 }
