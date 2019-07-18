@@ -1,4 +1,4 @@
-package info.artificialcolors.core;
+package info.artificialcolors.backend;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

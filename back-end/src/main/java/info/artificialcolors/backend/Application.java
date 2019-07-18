@@ -1,4 +1,4 @@
-package info.artificialcolors.core;
+package info.artificialcolors.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class Application {
 
-    @RequestMapping("/test")
+    @RequestMapping("/")
+    String index() {
+        return "index";
+    }
+
+    @RequestMapping("/demo")
     @ResponseBody
-    String test() {
-        return "This a test for Heroku!";
+    String demo() {
+        return "This is a demo";
     }
 
     public static void main(String[] args) {
