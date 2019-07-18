@@ -9,7 +9,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>info.artificialcolors</groupId>
     <artifactId>front-end</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -60,15 +59,33 @@
                 <version>1.8</version>
                 <executions>
                     <execution>
+                        <id>clean</id>
+                        <phase>clean</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <delete>
+                                    <fileset dir="../back-end/src/main/resources">
+                                        <exclude name="application.properties"/>
+                                    </fileset>
+                                </delete>
+                            </target>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>package</id>
                         <phase>package</phase>
                         <goals>
                             <goal>run</goal>
                         </goals>
                         <configuration>
-                            <tasks>
+                            <target>
+                                <move file="build/icons" tofile="../back-end/src/main/resources/static/icons"/>
                                 <move file="build/static" tofile="../back-end/src/main/resources/static/static" />
                                 <move file="build" tofile="../back-end/src/main/resources/templates"/>
-                            </tasks>
+                            </target>
                         </configuration>
                     </execution>
                 </executions>
