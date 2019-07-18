@@ -68,7 +68,8 @@
                             <target>
                                 <delete>
                                     <fileset dir="../back-end/src/main/resources">
-                                        <exclude name="application.properties"/>
+                                        <exclude name="*.properties"/>
+                                        <exclude name="db/**"/>
                                     </fileset>
                                 </delete>
                             </target>

@@ -1,4 +1,4 @@
-package info.artificialcolors.backend;
+package info.artificialcolors;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
