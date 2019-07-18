@@ -1,0 +1,22 @@
+@import "~bourbon-neat/core/neat";
+@import "~bourbon/core/bourbon";
+
+$secondary-font-color: #a2a2a2;
+$header-font-color: #fff;
+$background-color: #fff;
+$body-background-color: #eaeaea;
+$header-background-color: #333;
+$header-hover-background-color: #111;
+$synthetic-border-color: #FF6B6B;
+$natural-border-color: #79BD9A;
+
+$layout-grid: (
+        columns: 1,
+        gutter: 2rem
+);
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

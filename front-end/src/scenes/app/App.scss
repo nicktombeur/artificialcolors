@@ -1,0 +1,48 @@
+@import "../../common/Common";
+
+body {
+  background-color: $body-background-color;
+}
+
+.app {
+  @include grid-container;
+}
+
+.header {
+  margin-bottom: 4rem;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $header-background-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  li {
+    float: left;
+
+    &.nav-right {
+      float: right;
+    }
+
+    .nav-item {
+      @include padding(14px 16px);
+      display: block;
+      color: $header-font-color;
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $header-hover-background-color;
+      }
+    }
+  }
+}
+
+.content {
+  @include grid-column(1, $layout-grid);
+}

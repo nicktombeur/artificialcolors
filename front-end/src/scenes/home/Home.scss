@@ -1,0 +1,97 @@
+@import "../../common/Common";
+
+$color-cards--tablet-up: (
+        columns: 3,
+        gutter: 3rem,
+        media: "(min-width: 768px)"
+);
+
+$color-cards--tablet-down: (
+        columns: 1,
+        gutter: -2rem,
+        media: "(max-width: 414px)"
+);
+
+.color-table {
+  @include grid-column(1, $layout-grid);
+}
+
+.color-card {
+  &-item {
+    display: table;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(black, .12), 0 1px 2px rgba(black, 0.24);
+    background-color: $background-color;
+
+    h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $secondary-font-color;
+      margin-top: 5px;
+    }
+
+    @include grid-column(1, $layout-grid);
+
+    @include grid-media($color-cards--tablet-up) {
+      @include grid-column(1);
+
+      border-top: 0.5em solid gray;
+      padding: 1em;
+      margin: 1em;
+
+      &--green {
+        border-top-color: $natural-border-color;
+      }
+
+      &--red {
+        border-top-color: $synthetic-border-color;
+      }
+
+      img {
+        @include padding(null 1em 1em null);
+        float: left;
+        height: 2em;
+        width: auto;
+      }
+    }
+
+    @include grid-media($color-cards--tablet-down) {
+      @include grid-column(1);
+
+      margin-bottom: 0.5em;
+      border-left: 0.5em solid gray;
+
+      &--green {
+        border-left-color: $natural-border-color;
+      }
+
+      &--red {
+        border-left-color: $synthetic-border-color;
+      }
+
+      /*display: flex;
+      align-items: center;
+      height: 100%;*/
+
+      img {
+        display: none;
+      }
+
+      h1 {
+        padding: .5em 0 0 .5em;
+      }
+
+      h2 {
+        padding-left: .8em;
+      }
+    }
+
+  }
+}
