@@ -76,12 +76,11 @@ $color-cards--tablet-down: (
         border-left-color: $synthetic-border-color;
       }
 
-      /*display: flex;
-      align-items: center;
-      height: 100%;*/
-
       img {
-        display: none;
+        @include padding(1em 1em 1em 1em);
+        float: left;
+        height: 2em;
+        width: auto;
       }
 
       h1 {

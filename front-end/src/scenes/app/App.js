@@ -30,7 +30,15 @@ class App extends Component {
                     <nav>
                         <ul>
                             <li>
-                                <a href='/' className='nav-item'>Artificial Colors</a>
+                                <a href='/' className='nav-logo'>
+                                    <img src='favicon.png' alt='logo'/>
+                                </a>
+                            </li>
+                            <li>
+                                <p className='nav-item'>Artificial Colors</p>
+                            </li>
+                            <li className='nav-right'>
+
                             </li>
                         </ul>
                     </nav>

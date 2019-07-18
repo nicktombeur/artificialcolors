@@ -83,6 +83,7 @@
                         <configuration>
                             <target>
                                 <move file="build/icons" tofile="../back-end/src/main/resources/static/icons"/>
+                                <move file="build/favicon.png" tofile="../back-end/src/main/resources/static/favicon.png"/>
                                 <move file="build/static" tofile="../back-end/src/main/resources/static/static" />
                                 <move file="build" tofile="../back-end/src/main/resources/templates"/>
                             </target>
