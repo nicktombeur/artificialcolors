@@ -1,15 +1,15 @@
-CREATE PROCEDURE insert_data(IN code VARCHAR(10), IN artificial BOOLEAN)
-AS
-$$
-BEGIN
-    INSERT INTO number VALUES (nextval('number_id_seq'), code, artificial);
-END;
-$$
-    LANGUAGE plpgsql;
-
 DO
-$$
+$INSERT_DATA$
     BEGIN
+        CREATE PROCEDURE insert_data(IN code VARCHAR(10), IN artificial BOOLEAN)
+        AS
+        $CREATE_PROCEDURE$
+        BEGIN
+            INSERT INTO number VALUES (nextval('number_id_seq'), code, artificial);
+        END;
+        $CREATE_PROCEDURE$
+            LANGUAGE plpgsql;
+
         CALL insert_data('E100', false);
         CALL insert_data('E100(ii)', false);
         CALL insert_data('E101', false);
@@ -77,7 +77,7 @@ $$
         CALL insert_data('E180', true);
         CALL insert_data('E181', false);
         CALL insert_data('E182', false);
-    END
-$$;
+    END;
+$INSERT_DATA$;
 
-DROP PROCEDURE insert_data;
+DROP PROCEDURE IF EXISTS insert_data(VARCHAR(10), BOOLEAN);
