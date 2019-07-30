@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import './SearchBar.scss';
+import React, {Component} from "react";
+import "./SearchBar.scss";
 
 class SearchBar extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {value: ''};
+        this.state = {value: ""};
 
         this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
     }

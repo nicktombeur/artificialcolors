@@ -77,7 +77,7 @@ $INSERT_DATA$
         CALL insert_data('E180', true);
         CALL insert_data('E181', false);
         CALL insert_data('E182', false);
+
+        DROP PROCEDURE IF EXISTS insert_data(VARCHAR(10), BOOLEAN);
     END;
 $INSERT_DATA$;
-
-DROP PROCEDURE IF EXISTS insert_data(VARCHAR(10), BOOLEAN);
