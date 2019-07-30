@@ -1,7 +1,8 @@
 class DataLoader {
 
     load() {
-        return import('../common/data/colors')
+        // TODO use correct URL for environment
+        return fetch("http://localhost:8080/number").then((res) => res.json());
     }
 }
 

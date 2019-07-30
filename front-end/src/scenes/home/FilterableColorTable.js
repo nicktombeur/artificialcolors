@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import SearchBar from "../../components/searchbar/SearchBar";
 import ColorTable from "./ColorTable";
-import './Home.scss';
+import "./Home.scss";
 
 class FilterableColorTable extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            filterText: ''
+            filterText: ""
         };
 
         this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
@@ -16,7 +16,7 @@ class FilterableColorTable extends Component {
 
     handleFilterTextChange(filterText) {
         this.setState({
-            filterText: filterText
+            filterText
         });
     }
 
