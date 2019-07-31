@@ -10,12 +10,11 @@ class App extends Component {
         this.state = {
             colors: []
         };
-        this.dataLoader = new DataLoader();
         this.loadColors();
     }
 
     loadColors() {
-        this.dataLoader
+        DataLoader
             .load()
             .then((colors) => this.setState({
                 colors
