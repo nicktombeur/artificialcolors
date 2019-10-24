@@ -21,6 +21,12 @@
         <profile>
             <id>dev</id>
             <properties>
+                <npm.build.args>run build_dev</npm.build.args>
+            </properties>
+        </profile>
+        <profile>
+            <id>staging</id>
+            <properties>
                 <npm.build.args>run build_staging</npm.build.args>
             </properties>
         </profile>
