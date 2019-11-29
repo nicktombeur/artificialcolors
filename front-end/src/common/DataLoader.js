@@ -3,7 +3,8 @@ const api = process.env.REACT_APP_API_HOST;
 class DataLoader {
 
     static load() {
-        return fetch(api + "/number").then((res) => res.json());
+        let url = process.env.NODE_ENV === 'development' ? api + "/number" : "/number";
+        return fetch(url).then((res) => res.json());
     }
 }
 
