@@ -34,7 +34,7 @@ class App extends Component {
                                 </a>
                             </li>
                             <li>
-                                <p className="nav-item">Artificial Colors</p>
+                                <p className="nav-item">Natural Colors</p>
                             </li>
                             <li className="nav-right">
 

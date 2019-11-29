@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>info.artificialcolors</groupId>
+    <groupId>info.naturalcolors</groupId>
     <artifactId>back-end</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -21,7 +21,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>info.artificialcolors</groupId>
+            <groupId>info.naturalcolors</groupId>
             <artifactId>front-end</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <type>pom</type>

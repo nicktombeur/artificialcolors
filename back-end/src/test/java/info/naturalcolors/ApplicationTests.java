@@ -1,4 +1,4 @@
-package info.artificialcolors;
+package info.naturalcolors;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

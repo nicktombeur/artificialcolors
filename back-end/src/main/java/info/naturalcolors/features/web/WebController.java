@@ -1,4 +1,4 @@
-package info.artificialcolors.features.web;
+package info.naturalcolors.features.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

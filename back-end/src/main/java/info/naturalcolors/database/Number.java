@@ -1,4 +1,4 @@
-package info.artificialcolors.database;
+package info.naturalcolors.database;
 
 import javax.persistence.*;
 import java.util.List;

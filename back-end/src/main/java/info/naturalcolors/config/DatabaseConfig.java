@@ -1,4 +1,4 @@
-package info.artificialcolors.config;
+package info.naturalcolors.config;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;

@@ -1,4 +1,4 @@
-package info.artificialcolors.features.number;
+package info.naturalcolors.features.number;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

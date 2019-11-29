@@ -1,4 +1,4 @@
-package info.artificialcolors.features.number;
+package info.naturalcolors.features.number;
 
 public class Number {
 
