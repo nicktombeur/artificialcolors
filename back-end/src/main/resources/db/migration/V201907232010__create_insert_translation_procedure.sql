@@ -1,17 +1,19 @@
 DO
 $INSERT_TRANSLATION$
     BEGIN
-        CREATE PROCEDURE insert_translation(number_code VARCHAR(10), language VARCHAR(5), name VARCHAR(255),
-                                            is_default BOOLEAN DEFAULT FALSE)
+        CREATE PROCEDURE insert_translation(p_code number.code%TYPE,
+                                            p_language number_translation.language%TYPE,
+                                            p_name number_translation.name%TYPE,
+                                            p_is_default number_translation.is_default%TYPE DEFAULT FALSE)
         AS
         $$
         DECLARE
-            number_id INTEGER := (SELECT id
-                                  FROM number
-                                  where code = number_code);
+            v_number_id INTEGER := (SELECT id
+                                    FROM number
+                                    where code = p_code);
         BEGIN
             INSERT INTO number_translation
-            VALUES (nextval('number_translation_id_seq'), number_id, language, is_default, name);
+            VALUES (nextval('number_translation_id_seq'), v_number_id, p_language, p_is_default, p_name);
         END;
         $$
             LANGUAGE plpgsql;

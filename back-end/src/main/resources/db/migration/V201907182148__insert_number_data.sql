@@ -1,11 +1,11 @@
 DO
 $INSERT_DATA$
     BEGIN
-        CREATE PROCEDURE insert_data(IN code VARCHAR(10), IN artificial BOOLEAN)
+        CREATE PROCEDURE insert_data(p_code number.code%TYPE, p_artificial number.artificial%TYPE)
         AS
         $CREATE_PROCEDURE$
         BEGIN
-            INSERT INTO number VALUES (nextval('number_id_seq'), code, artificial);
+            INSERT INTO number VALUES (nextval('number_id_seq'), p_code, p_artificial);
         END;
         $CREATE_PROCEDURE$
             LANGUAGE plpgsql;
@@ -78,6 +78,6 @@ $INSERT_DATA$
         CALL insert_data('E181', false);
         CALL insert_data('E182', false);
 
-        DROP PROCEDURE IF EXISTS insert_data(VARCHAR(10), BOOLEAN);
+        DROP PROCEDURE IF EXISTS insert_data(code number.code%TYPE, artificial number.artificial%TYPE);
     END;
 $INSERT_DATA$;

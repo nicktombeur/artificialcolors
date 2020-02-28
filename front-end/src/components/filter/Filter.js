@@ -1,7 +1,9 @@
 import React, {Component} from "react";
-import "./SearchBar.scss";
+import "./Filter.scss";
+import {withTranslation} from 'react-i18next';
 
-class SearchBar extends Component {
+// TODO rename to filter!
+class Filter extends Component {
 
     constructor(props) {
         super(props);
@@ -15,13 +17,16 @@ class SearchBar extends Component {
     }
 
     render() {
+        const {t} = this.props;
+
         return (
-            <input type="text"
-                   placeholder="Search..."
+            <input id="filter"
+                   type="search"
+                   placeholder={t('filter')}
                    value={this.props.filterText}
                    onChange={this.handleFilterTextChange}/>
         );
     }
 }
 
-export default SearchBar;
+export default withTranslation()(Filter);

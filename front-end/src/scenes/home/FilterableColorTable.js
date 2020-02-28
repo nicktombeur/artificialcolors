@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import SearchBar from "../../components/searchbar/SearchBar";
+import SearchBar from "../../components/filter/Filter";
 import ColorTable from "./ColorTable";
 import "./Home.scss";
 

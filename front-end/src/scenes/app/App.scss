@@ -17,7 +17,6 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: $header-background-color;
     position: fixed;
     top: 0;
@@ -29,6 +28,7 @@ body {
 
     &.nav-right {
       float: right;
+      padding: 1em 2em;
     }
 
     .nav-logo {
@@ -39,6 +39,7 @@ body {
         height: 2em;
         width: auto;
       }
+
       &:hover {
         background-color: $header-hover-background-color;
       }
