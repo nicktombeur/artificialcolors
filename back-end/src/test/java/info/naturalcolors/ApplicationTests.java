@@ -1,13 +1,15 @@
 package info.naturalcolors;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import net.sourceforge.tess4j.Tesseract;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.boot.test.mock.mockito.MockBean;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 public class ApplicationTests {
+
+    @MockBean
+    private Tesseract tesseract;
 
     @Test
     public void contextLoads() {

@@ -1,15 +1,15 @@
 package info.naturalcolors.features.ocr;
 
+import info.naturalcolors.features.ocr.validator.ValidImage;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.IOException;
-
 @RestController
+@Validated
 @RequestMapping("/ocr")
 public class OcrController {
 
@@ -20,14 +20,11 @@ public class OcrController {
     }
 
     @PostMapping
-    public void validate(@RequestParam("file") final MultipartFile uploadedFile) {
-        // TODO safe to use fileName ? or use random value?
-        final var file = new File(System.getProperty("java.io.tmpdir") + "/" + uploadedFile.getOriginalFilename());
-        try {
-            uploadedFile.transferTo(file);
-            ocrService.validate(file);
-        } catch (IOException e) {
-            // TODO error handling
-        }
+    public void containsArtificialColors(
+            @ValidImage(message = "Only JPEG images are allowed")
+            @RequestParam("file") final MultipartFile uploadedFile) {
+        if (uploadedFile.isEmpty()) throw new EmptyFileException();
+
+        ocrService.containsArtificialColors(uploadedFile);
     }
 }
