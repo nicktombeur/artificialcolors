@@ -1,4 +1,4 @@
-CREATE TABLE number
+CREATE TABLE colorant
 (
     id         SERIAL PRIMARY KEY,
     code       VARCHAR(10) NOT NULL,

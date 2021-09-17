@@ -5,7 +5,7 @@ $INSERT_DATA$
         AS
         $CREATE_PROCEDURE$
         BEGIN
-            INSERT INTO number VALUES (nextval('number_id_seq'), code, artificial);
+            INSERT INTO colorant VALUES (nextval('colorant_id_seq'), code, artificial);
         END;
         $CREATE_PROCEDURE$
             LANGUAGE plpgsql;

@@ -1,0 +1,74 @@
+DO
+$$
+    BEGIN
+        CALL insert_translation('E100', 'en-GB', 'Curcumin');
+        CALL insert_translation('E100(ii)', 'en-GB', '???');
+        CALL insert_translation('E101', 'en-GB', 'Riboflavin');
+        CALL insert_translation('E101(ii)', 'en-GB', '???');
+        CALL insert_translation('E102', 'en-GB', 'Tartrazine');
+        CALL insert_translation('E103', 'en-GB', 'Alkannin');
+        CALL insert_translation('E104', 'en-GB', 'Quinoline Yellow WS');
+        CALL insert_translation('E105', 'en-GB', 'Fast Yellow AB');
+        CALL insert_translation('E106', 'en-GB', 'Riboflavin-5-Sodium Phosphate');
+        CALL insert_translation('E107', 'en-GB', 'Yellow 2G');
+        CALL insert_translation('E110', 'en-GB', 'Sunset Yellow FCF (Orange Yellow S, FD&C Yellow 6)');
+        CALL insert_translation('E111', 'en-GB', 'Orange GGN');
+        CALL insert_translation('E120', 'en-GB', 'Cochineal, Carminic acid, Carmine (Natural Red 4)');
+        CALL insert_translation('E121', 'en-GB', 'Citrus Red 2');
+        CALL insert_translation('E122', 'en-GB', 'Carmoisine (azorubine)');
+        CALL insert_translation('E123', 'en-GB', 'Amaranth (FD&C Red 2)');
+        CALL insert_translation('E124', 'en-GB', 'Ponceau 4R (Cochineal Red A, Brilliant Scarlet 4R)');
+        CALL insert_translation('E125', 'en-GB', 'Ponceau SX, Scarlet GN');
+        CALL insert_translation('E126', 'en-GB', 'Ponceau 6R');
+        CALL insert_translation('E127', 'en-GB', 'Erythrosine (FD&C Red 3)');
+        CALL insert_translation('E128', 'en-GB', 'Red 2G');
+        CALL insert_translation('E129', 'en-GB', 'Allura Red AC (FD&C Red 40)');
+        CALL insert_translation('E130', 'en-GB', 'Indanthrene blue RS');
+        CALL insert_translation('E131', 'en-GB', 'Patent Blue V');
+        CALL insert_translation('E132', 'en-GB', 'Indigo carmine (indigotine, FD&C Blue 2)');
+        CALL insert_translation('E133', 'en-GB', 'Brilliant Blue FCF (FD&C Blue 1)');
+        CALL insert_translation('E140', 'en-GB',
+                                'Chlorophylls and Chlorophyllins: (i) Chlorophylls (ii) Chlorophyllins');
+        CALL insert_translation('E141', 'en-GB',
+                                'Copper complexes of chlorophylls and chlorophyllins (i) Copper complexes of chlorophylls (ii) Copper complexes of chlorophyllins');
+        CALL insert_translation('E142', 'en-GB', 'Green S');
+        CALL insert_translation('E143', 'en-GB', 'Fast Green FCF (FD&C Green 3)');
+        CALL insert_translation('E150a', 'en-GB', 'Plain caramel');
+        CALL insert_translation('E150b', 'en-GB', 'Caustic sulphite caramel');
+        CALL insert_translation('E150c', 'en-GB', 'Ammonia caramel');
+        CALL insert_translation('E150d', 'en-GB', 'Sulphite ammonia caramel');
+        CALL insert_translation('E151', 'en-GB', 'Black PN, Brilliant Black BN');
+        CALL insert_translation('E152', 'en-GB', 'Carbon black (hydrocarbon)');
+        CALL insert_translation('E153', 'en-GB', 'Vegetable carbon');
+        CALL insert_translation('E154', 'en-GB', 'Brown FK (kipper brown)');
+        CALL insert_translation('E155', 'en-GB', 'Brown HT (chocolate brown HT)');
+        CALL insert_translation('E160a', 'en-GB', 'Alpha-carotene, Beta-carotene, Gamma-carotene');
+        CALL insert_translation('E160b', 'en-GB', 'Annatto, bixin, norbixin');
+        CALL insert_translation('E160c', 'en-GB', 'Paprika oleoresin: (i) capsanthin, (ii) capsorubin');
+        CALL insert_translation('E160d', 'en-GB', 'Lycopene');
+        CALL insert_translation('E160e', 'en-GB', 'Beta-apo-8''-carotenal (C 30)');
+        CALL insert_translation('E160f', 'en-GB', 'Ethyl ester of beta-apo-8''-carotenic acid (C 30)');
+        CALL insert_translation('E161a', 'en-GB', 'Flavoxanthin');
+        CALL insert_translation('E161b', 'en-GB', 'Lutein');
+        CALL insert_translation('E161c', 'en-GB', 'Cryptoxanthin');
+        CALL insert_translation('E161d', 'en-GB', 'Rubixanthin');
+        CALL insert_translation('E161e', 'en-GB', 'Violaxanthin');
+        CALL insert_translation('E161f', 'en-GB', 'Rhodoxanthin');
+        CALL insert_translation('E161g', 'en-GB', 'Canthaxanthin');
+        CALL insert_translation('E161h', 'en-GB', 'Zeaxanthin');
+        CALL insert_translation('E161i', 'en-GB', 'Citranaxanthin');
+        CALL insert_translation('E161j', 'en-GB', 'Astaxanthin');
+        CALL insert_translation('E162', 'en-GB', 'Beetroot Red, Betanin');
+        CALL insert_translation('E163', 'en-GB', 'Anthocyanins');
+        CALL insert_translation('E164', 'en-GB', 'Saffron');
+        CALL insert_translation('E170', 'en-GB', 'Calcium carbonate, Chalk');
+        CALL insert_translation('E171', 'en-GB', 'Titanium dioxide');
+        CALL insert_translation('E172', 'en-GB', 'Iron oxides and iron hydroxides');
+        CALL insert_translation('E173', 'en-GB', 'Aluminium');
+        CALL insert_translation('E174', 'en-GB', 'Silver');
+        CALL insert_translation('E175', 'en-GB', 'Gold');
+        CALL insert_translation('E180', 'en-GB', 'Pigment Rubine, Lithol Rubine BK');
+        CALL insert_translation('E181', 'en-GB', 'Tannin');
+        CALL insert_translation('E182', 'en-GB', 'Orcein, Orchill');
+    END
+$$;

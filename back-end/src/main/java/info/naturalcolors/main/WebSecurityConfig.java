@@ -1,4 +1,4 @@
-package info.naturalcolors.config;
+package info.naturalcolors.main;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
