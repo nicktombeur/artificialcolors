@@ -4,6 +4,8 @@ import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.Objects;
+
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public enum Language {
 
@@ -12,4 +14,8 @@ public enum Language {
 
     @Getter
     private final String iso;
+
+    public static String toIso(final Language language) {
+        return Objects.requireNonNullElse(language, Language.ENGLISH).getIso();
+    }
 }

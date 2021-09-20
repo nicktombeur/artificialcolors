@@ -1,6 +1,5 @@
 package info.naturalcolors.colorant.adapter.in.web;
 
-import info.naturalcolors.colorant.application.port.in.RetrieveAllColorantsCommand;
 import info.naturalcolors.colorant.application.port.in.RetrieveAllColorantsUseCase;
 import info.naturalcolors.colorant.domain.Colorant;
 import lombok.AllArgsConstructor;
@@ -20,7 +19,7 @@ public class ColorantController {
 
     @GetMapping
     public List<Colorant> getAll(@RequestParam(value = "lang", required = false) String language) {
-        return retrieveAllColorants.retrieveAll(new RetrieveAllColorantsCommand(null));
+        return retrieveAllColorants.retrieveAll(null);
     }
 
 }
