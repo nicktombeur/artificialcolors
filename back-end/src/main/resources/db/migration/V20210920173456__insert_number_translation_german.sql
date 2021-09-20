@@ -54,8 +54,8 @@ $$
         CALL insert_translation('E161f', 'de-DE', 'Rhodoxanthin');
         CALL insert_translation('E161g', 'de-DE', 'Canthaxanthin, Xanthophyll');
         CALL insert_translation('E161h', 'de-DE', 'Citranaxanthin');
-        CALL insert_translation('E161i', 'de-DE', '');
-        CALL insert_translation('E161j', 'de-DE', '');
+        CALL insert_translation('E161i', 'de-DE', 'Citranaxanthin');
+        CALL insert_translation('E161j', 'de-DE', 'Astaxanthin');
         CALL insert_translation('E162', 'de-DE', 'Beetenrot, Betanin');
         CALL insert_translation('E163', 'de-DE', 'Anthocyane');
         CALL insert_translation('E164', 'de-DE', 'Safran');
@@ -67,6 +67,6 @@ $$
         CALL insert_translation('E175', 'de-DE', 'Gold');
         CALL insert_translation('E180', 'de-DE', 'Litholrubin BK');
         CALL insert_translation('E181', 'de-DE', 'Tannin');
-        CALL insert_translation('E182', 'de-DE', '');
+        CALL insert_translation('E182', 'de-DE', 'Orchil, Ocein (Lackmus)');
     END
 $$;
