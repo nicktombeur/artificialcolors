@@ -1,16 +1,17 @@
 DO
 $INSERT_TRANSLATION$
     BEGIN
-        CREATE PROCEDURE insert_translation(colorant_code VARCHAR(10), language VARCHAR(5), name VARCHAR(255))
-        AS
+        CREATE PROCEDURE insert_translation(p_code colorant.code% TYPE,
+                                            p_language colorant_translation.language% TYPE,
+                                            p_name colorant_translation.name% TYPE) AS
         $$
         DECLARE
-            colorant_id INTEGER := (SELECT id
-                                  FROM colorant
-                                  where code = colorant_code);
+            v_colorant_id INTEGER := (SELECT id
+                                      FROM colorant
+                                      where code = p_code);
         BEGIN
             INSERT INTO colorant_translation
-            VALUES (nextval('colorant_translation_id_seq'), colorant_id, language, name);
+            VALUES (nextval('colorant_translation_id_seq'), v_colorant_id, p_language, p_name);
         END;
         $$
             LANGUAGE plpgsql;

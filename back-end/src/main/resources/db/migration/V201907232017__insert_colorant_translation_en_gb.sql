@@ -2,9 +2,9 @@ DO
 $$
     BEGIN
         CALL insert_translation('E100', 'en-GB', 'Curcumin');
-        CALL insert_translation('E100(ii)', 'en-GB', '???');
+        CALL insert_translation('E100(ii)', 'en-GB', 'Turmeric');
         CALL insert_translation('E101', 'en-GB', 'Riboflavin');
-        CALL insert_translation('E101(ii)', 'en-GB', '???');
+        CALL insert_translation('E101(ii)', 'en-GB', 'Riboflavin- 5-Sodium Phosphate');
         CALL insert_translation('E102', 'en-GB', 'Tartrazine');
         CALL insert_translation('E103', 'en-GB', 'Alkannin');
         CALL insert_translation('E104', 'en-GB', 'Quinoline Yellow WS');
